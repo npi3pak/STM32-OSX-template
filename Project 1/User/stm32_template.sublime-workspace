@@ -1,0 +1,647 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Corte",
+				"cortex-m4"
+			],
+			[
+				"S",
+				"Startup"
+			],
+			[
+				"arm-non",
+				"arm-none-eabi-gcc"
+			],
+			[
+				"stm32",
+				"stm32f4xxg_"
+			],
+			[
+				"no",
+				"nostdlib"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"tit",
+				"title_string"
+			],
+			[
+				"da",
+				"datemin"
+			],
+			[
+				"date",
+				"date_arg"
+			],
+			[
+				"colo",
+				"color1"
+			],
+			[
+				"tim",
+				"time_delta"
+			],
+			[
+				"t",
+				"time2"
+			],
+			[
+				"p",
+				"print"
+			],
+			[
+				"u",
+				"utf-8"
+			],
+			[
+				"fi",
+				"firstName"
+			],
+			[
+				"on",
+				"online_mobile"
+			],
+			[
+				"IN",
+				"INSERT"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"Rx",
+				"Rx"
+			],
+			[
+				"Ar",
+				"Atack_var"
+			],
+			[
+				"Timr",
+				"Timer1"
+			],
+			[
+				"n",
+				"noteON"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "arm-none-eabi-gcc -g -O2 -mlittle-endian -mthumb -ffreestanding -nostdlib -nostdinc -I../CMSIS -I../Startup -I../StdPerph -I../StdPerph/inc -L../StdPerph/src -mcpu=cortex-m4 -DCONFIG_STM32F4_DISCOVERY=1 -Wl,-T,stm32f4xxg_flash.ld main.c ../Startup/cm3_genstartup.c -o main_F4.elf\n/usr/local/gcc_arm/gcc-arm-none-eabi-4_9-2015q2/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld: cannot open linker script file stm32f4xxg_flash.ld: No such file or directory\ncollect2: error: ld returned 1 exit status\n\n\n\narm-none-eabi-gcc -g -O2 -mlittle-endian -mthumb -ffreestanding -nostdlib -nostdinc -I../CMSIS -I../StdPerph -I../StdPerph/inc -I../StdPerph/src -L../Startup -mcpu=cortex-m4 -DCONFIG_STM32F4_DISCOVERY=1 -Wl,-T,stm32f4xxg_flash.ld main.c ../Startup/cm3_genstartup.c -o main_F4.elf\n/usr/local/gcc_arm/gcc-arm-none-eabi-4_9-2015q2/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld: cannot open linker script file generic_sections_flash.ld: No such file or directory\ncollect2: error: ld returned 1 exit status\n\n\narm-none-eabi-gcc -g -O2 -mlittle-endian -mthumb -ffreestanding -nostdlib -nostdinc -I../CMSIS -I../StdPerph -I../StdPerph/inc -I../StdPerph/src -L../Startup -mcpu=cortex-m4 -DCONFIG_STM32F4_DISCOVERY=1 -Wl,-T,stm32f4xxg_flash.ld main.c ../Startup/cm3_genstartup.c -o main_F4.elf\n/var/folders/ls/wc7sj2nj2291bk_6mf15x7rc0000gn/T//ccAxukGf.o: In function `main':\n/Users/ivanvoid/Documents/STM32/STM32Fxx_TEMPLATE/Project 1/User/main.c:13: undefined reference to `RCC_AHB1PeriphClockCmd'\n/Users/ivanvoid/Documents/STM32/STM32Fxx_TEMPLATE/Project 1/User/main.c:20: undefined reference to `GPIO_Init'\n/Users/ivanvoid/Documents/STM32/STM32Fxx_TEMPLATE/Project 1/User/main.c:31: undefined reference to `GPIO_SetBits'\ncollect2: error: ld returned 1 exit status\nmake: *** [main_F4.elf] Error 1\n[Finished in 0.2s with exit code 2]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\narm-none-eabi-gcc -g -O2 -mlittle-endian -mthumb -ffreestanding -nostdlib -nostdinc -I../CMSIS -I../StdPerph -I../StdPerph/inc -I../StdPerph/src -L../Startup -mcpu=cortex-m4 -DCONFIG_STM32F4_DISCOVERY=1 -Wl,-T,stm32f4xxg_flash.ld main.c ../Startup/cm3_genstartup.c -o main_F4.elf\n/var/folders/ls/wc7sj2nj2291bk_6mf15x7rc0000gn/T//ccmmlMav.o: In function `main':\n/Users/ivanvoid/Documents/STM32/STM32Fxx_TEMPLATE/Project 1/User/main.c:14: undefined reference to `RCC_AHB1PeriphClockCmd'\ncollect2: error: ld returned 1 exit status\nmake: *** [main_F4.elf] Error 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\narm-none-eabi-gcc -g -O2 -mlittle-endian -mthumb -ffreestanding -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I../CMSIS -I../StdPerph -I../StdPerph/inc -I../StdPerph/src -L../Startup -mcpu=cortex-m4 -DCONFIG_STM32F4_DISCOVERY=1 -Wl,-T,stm32f4xxg_flash.ld main.c ../Startup/cm3_genstartup.c -o main_F4.elf\n/usr/local/gcc_arm/gcc-arm-none-eabi-4_9-2015q2/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/crt0.o: In function `_start':\n(.text+0x64): undefined reference to `__bss_start__'\n/usr/local/gcc_arm/gcc-arm-none-eabi-4_9-2015q2/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/crt0.o: In function `_start':\n(.text+0x68): undefined reference to `__bss_end__'\n/var/folders/ls/wc7sj2nj2291bk_6mf15x7rc0000gn/T//cc0g3EUd.o: In function `main':\n/Users/ivanvoid/Documents/STM32/STM32Fxx_TEMPLATE/Project 1/User/main.c:13: undefined reference to `RCC_AHB1PeriphClockCmd'\n/usr/local/gcc_arm/gcc-arm-none-eabi-4_9-2015q2/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/libg.a(lib_a-exit.o): In function `exit':\nexit.c:(.text.exit+0x16): undefined reference to `_exit'\ncollect2: error: ld returned 1 exit status\nmake: *** [main_F4.elf] Error 1\n[Finished in 0.4s with exit code 2]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[Finished in 0.1s with exit code 2]",
+			"settings":
+			{
+				"buffer_size": 3779,
+				"line_ending": "Unix",
+				"name": "arm-none-eabi-gcc -g -O2 -mlittle-endian -mthumb -"
+			}
+		},
+		{
+			"file": "/Users/ivanvoid/Documents/STM32/STM32Fxx_TEMPLATE/Project 1/StdPerph/inc/stm32f4xx_rcc.h",
+			"settings":
+			{
+				"buffer_size": 38934,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Makefile",
+			"settings":
+			{
+				"buffer_size": 1525,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mlittle-endian -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb-interwork  -Os  -DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DMANGUSTA_DISCOVERY -DUSE_USB_OTG_FS -DHSE_VALUE=8000000 -I./ -I./ -I../../Utilities/STM32F4-Discovery -I../../Libraries/CMSIS/ST/STM32F4xx/Include/ -I../../Libraries/CMSIS/Include/ -I../../Libraries/STM32F4xx_StdPeriph_Driver/inc/ -I../../Libraries/STM32_USB_Device_Library/Class/hid/inc -I../../Libraries/STM32_USB_Device_Library/Core/inc/ -I../../Libraries/STM32_USB_OTG_Driver/inc/  -Wl,-T,stm32_flash.ld main.c stm32f4xx_it.c system_stm32f4xx.c ../../Utilities/STM32F4-Discovery/stm32f4_discovery.c ../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.c ../../Libraries/STM32F4xx_StdPeriph_Driver/src/misc.c ../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c ../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c ../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.c startup_stm32f4xx.s -o demo.elf\n/usr/local/gcc_arm/gcc-arm-none-eabi-4_9-2015q2/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-exit.o): In function `exit':\nexit.c:(.text.exit+0x16): undefined reference to `_exit'\ncollect2: error: ld returned 1 exit status\nmake: *** [demo.elf] Error 1",
+			"settings":
+			{
+				"buffer_size": 1296,
+				"line_ending": "Unix",
+				"name": "arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mlittle"
+			}
+		},
+		{
+			"file": "main.c",
+			"settings":
+			{
+				"buffer_size": 192,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/make_stm32.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pask",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/ivanvoid/Documents/STM32/STM32Fxx_TEMPLATE/Project 1/User/main.c",
+		"/Users/ivanvoid/Documents/STM32/STM32Fxx_TEMPLATE/Project 1/CMSIS/stm32f4xx.h",
+		"/Users/ivanvoid/Documents/STM32/STM32Fxx_TEMPLATE/Project 1/User/Makefile",
+		"/Users/ivanvoid/Documents/py_private_parser/show_user_db.py",
+		"/Users/ivanvoid/Documents/py_private_parser/show_user_status.py",
+		"/Users/ivanvoid/Documents/py_private_parser/py_private_parse.py",
+		"/Users/ivanvoid/Documents/py_private_parser/user_status.py",
+		"/Users/ivanvoid/Documents/py_private_parser/add_user_db.py",
+		"/Users/ivanvoid/Documents/py_private_parser/del_user_db.py",
+		"/Users/ivanvoid/Documents/py_private_parser/WWW/plot_metric.py",
+		"/Users/ivanvoid/Documents/py_private_parser/plot_metric_server.py",
+		"/Users/ivanvoid/Documents/py_private_parser/config.py",
+		"/Users/ivanvoid/Documents/py_private_parser/plot_metric server.py",
+		"/Users/ivanvoid/Documents/py_private_parser/plot_test.py",
+		"/Users/ivanvoid/Documents/py_private_parser/show_db.py",
+		"/Users/ivanvoid/Documents/Arduino/libraries/espwifi/espwifi.h",
+		"/Users/ivanvoid/Documents/Arduino/libraries/arduinouip/utility/Enc28J60Network.h",
+		"/Users/ivanvoid/Documents/Arduino/libraries/arduinouip/utility/enc28j60.h",
+		"/Users/ivanvoid/Documents/Arduino/libraries/arduinouip/UIPEthernet.h",
+		"/Users/ivanvoid/Downloads/FIKK4CTHOUFWXUF.ino",
+		"/Users/ivanvoid/Documents/Arduino/libraries/ethercard/Кубик.txt",
+		"/Users/ivanvoid/Documents/py_serv.py",
+		"/Users/ivanvoid/Documents/Arduino/libraries/arduinouip/utility/mempool.h",
+		"/Users/ivanvoid/Documents/Arduino/libraries/arduinoDB/arduinoDB.h",
+		"/Users/ivanvoid/Documents/Arduino/libraries/arduinoDB/arduinoDB.cpp",
+		"/Users/ivanvoid/Documents/Arduino/espwifi/espwifi.ino",
+		"/Users/ivanvoid/Documents/Arduino/ESP8266test_lcd/ESP8266test_lcd.ino",
+		"/Users/ivanvoid/Documents/Arduino/ESP8266test_lcd_lib/ESP8266test_lcd_lib.ino",
+		"/Users/ivanvoid/Documents/Arduino/libraries/espwifi/espwifi.cpp",
+		"/Users/ivanvoid/Documents/Arduino/libraries/pointertest/pointer_test.cpp",
+		"/Users/ivanvoid/Documents/DHL cubic rus.odt",
+		"/Users/ivanvoid/Documents/Arduino/cube_10part_firmware/cube_10part_firmware.ino",
+		"/Users/ivanvoid/Documents/Arduino/ESP8266test_lcd_lib.ino",
+		"/Users/ivanvoid/Documents/Arduino/libraries/pointertest/pointer_test.h",
+		"/Users/ivanvoid/Documents/Arduino/p_test/p_test.ino",
+		"/Users/ivanvoid/Documents/Arduino/p_test/pointer_test.cpp",
+		"/Users/ivanvoid/Documents/Arduino/p_test/pointer_test.h",
+		"/Users/ivanvoid/Documents/Arduino/p_test.ino",
+		"/Users/ivanvoid/Documents/Arduino/libraries/arduinoDB/1. Доставка из зарубежа в москву возможно только н",
+		"/Users/ivanvoid/Documents/Arduino/libraries/ledmatrix/LEDMatrix.cpp",
+		"/Users/ivanvoid/Documents/Arduino/espwifi/espwifi.h",
+		"/Users/ivanvoid/Documents/Arduino/espwifi/espwifi.cpp",
+		"/Users/ivanvoid/Documents/Arduino/espwifi.ino",
+		"/Users/ivanvoid/Documents/Arduino/ESP8266test/ESP8266test.ino",
+		"/Users/ivanvoid/Documents/Arduino/data_array.ino",
+		"/Users/ivanvoid/Documents/Arduino/arduinoDB/arduinoDB.h",
+		"/Users/ivanvoid/Documents/Arduino/arduinoDB/arduinoDB.c",
+		"/Users/ivanvoid/Documents/Arduino/RF433_test.ino",
+		"/Users/ivanvoid/Documents/Arduino/remote_2.txt",
+		"/Users/ivanvoid/Documents/Arduino/libraries/Adafruit_PCD8544/Adafruit_PCD8544.cpp",
+		"/Users/ivanvoid/Downloads/Cubic- the live demo.srt",
+		"/Users/ivanvoid/Documents/ESP8266/scr_frimware.txt",
+		"/Users/ivanvoid/Documents/Arduino/libraries/Adafruit_PCD8544/Adafruit_PCD8544.h",
+		"/Users/ivanvoid/Documents/CUBIC/пульт/remote.txt",
+		"/Users/ivanvoid/Downloads/iconeditor.py.py",
+		"/Users/ivanvoid/Documents/plot_test.py",
+		"/Users/ivanvoid/Downloads/Arduino/MIDIsynth_ToTEST/MIDIsynth_main_test/MIDIsynth_ADSL_v2_1/MIDIsynth_ADSL_v2_1.ino",
+		"/Users/ivanvoid/Documents/rpi_indygogo.py",
+		"/Users/ivanvoid/Downloads/Arduino/MIDIsynth_ToTEST/midiSynth_debug/test2.ino",
+		"/Users/ivanvoid/Downloads/Arduino/MIDIsynth_ToTEST/midiSynth_debug/midiSynth_debug.ino",
+		"/Users/ivanvoid/Downloads/Arduino/MIDIsynth_ToTEST/MIDIsynth_main_test/MIDIsynth_ADSL_v2_1_attack_worked/MIDIsynth_ADSL_v2_1_attack_worked.ino",
+		"/Users/ivanvoid/Downloads/Arduino/MIDIsynth_ToTEST/MIDIsynth_ToTEST.ino",
+		"/Users/ivanvoid/Downloads/Arduino/MIDIsynth_ToTEST/MIDIsynth_main_test/MIDIsynth_worked_1/MIDIsynth_worked_1.ino",
+		"/Users/ivanvoid/Downloads/Arduino/MIDIsynth_ToTEST/MIDIsynth_main_test/MIDIsynth_ADSL_v2/MIDIsynth_ADSL_v2.ino",
+		"/Users/ivanvoid/Downloads/Arduino/MIDIsynth_ToTEST/MIDIsynth_main_test/MIDIsynth_main_test.ino",
+		"/Users/ivanvoid/Downloads/Arduino/MIDIsynth_ToTEST/MIDIsynth_main_test/MIDIsynth_ADSL_v2.ino",
+		"/Users/ivanvoid/Downloads/Arduino/MIDIsynth_ToTEST/midiSynth_debug/test2/test2.ino",
+		"/Users/ivanvoid/Downloads/Arduino/MIDIsynth_ToTEST/midiSynth_debug/MIDIsynth_ATTACK_DAC_WORKED/MIDIsynth_ATTACK_DAC_WORKED.ino",
+		"/Users/ivanvoid/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/ivanvoid/Downloads/Arduino/MIDIsynth_ToTEST/MIDIsynth_main_test/MIDIsynth_worked_1/MIDIsynth_ADSL_test",
+		"/Users/ivanvoid/Downloads/Arduino/MIDIsynth_ToTEST/MIDIsynth_main_test.ino",
+		"/Users/ivanvoid/Documents/Arduino/MCP4921__test/MCP4921__test.ino",
+		"/Users/ivanvoid/Desktop/midiSynth_DACnote",
+		"/Users/ivanvoid/Desktop/midiSynth_0209/midiSynth_0209.ino",
+		"/Users/ivanvoid/Downloads/JLZ_pro_mini_06_08_14/JLZ_pro_mini_06_08_14.ino",
+		"/Users/ivanvoid/Downloads/git_tutorial/work/hello.html",
+		"/Users/ivanvoid/Downloads/gistb1627dd7e34a8c96d7d3-63d6078557816a8e036438a6dbad772648733ba1/ARDUsynth1.pde",
+		"/Users/ivanvoid/Downloads/gistb1627dd7e34a8c96d7d3-63d6078557816a8e036438a6dbad772648733ba1/gistfile1.pde",
+		"/Users/ivanvoid/Desktop/untitled"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"OBJCOPY",
+			"l",
+			"ln",
+			"RCC_AHB1PeriphClockCmd",
+			"conf.h",
+			"conf",
+			"USE_STDPERIPH_DRIVER",
+			"RCC_A",
+			"USE_STDPERIPH_DRIVER",
+			"mktemp",
+			"max_data_pointer",
+			"(/",
+			"timestamp",
+			"),",
+			"client",
+			"Send",
+			"SEND",
+			"browseUrl",
+			"Stash",
+			"tcpSend",
+			"stash",
+			"TCP",
+			"serviceRequest",
+			"req",
+			"servi",
+			"size",
+			"uidByte",
+			"PICC_D",
+			"PICC ",
+			"MIFARE_GetValue",
+			"MIFARE_Rea",
+			"MIFARE_Read(",
+			"MIFARE_Rea",
+			"MIFARE_GetValue",
+			"ReadC",
+			"readca",
+			"sak",
+			"EEPROM",
+			"espSerial",
+			"espSerial.",
+			"custom",
+			"switchSocket",
+			"custom",
+			"_0",
+			"stringCompareAndCut",
+			"[[ARDUINO cube_socket_write_off_",
+			"[[ARDUINO cube_socket_write_on_",
+			"0{5}",
+			"	",
+			"ASSERT",
+			"{",
+			"}",
+			"{0",
+			"{",
+			"{0",
+			"{",
+			",   /",
+			"        0",
+			"         0",
+			"         )",
+			", //",
+			"0, //",
+			"    0",
+			"    0x",
+			"t",
+			"\\n",
+			"[0-9][0-9][0-9]",
+			"[0-9][0-9][0-9][0-9]",
+			"[1-9][1-9][1-9][1-9]",
+			"[1-9]*2",
+			"[1-9]",
+			"(1-9)",
+			"([1-9])",
+			"(\\1)",
+			"(1-9)",
+			" ",
+			"\\n",
+			"**",
+			"*",
+			"[1-8]",
+			");\n",
+			"0xDAEA83EC",
+			"50",
+			"10",
+			"1024",
+			"sensor",
+			"e2",
+			"e1",
+			"(){\n",
+			","
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": true,
+		"replace_history":
+		[
+			"p_espSerial->",
+			"write_on_1",
+			"custom",
+			"_I0",
+			"[[ARDUINO cube_socket_custom_",
+			"",
+			"    {",
+			"},   /",
+			"    {0",
+			"}, //",
+			"    {0",
+			", ",
+			"ButtonOpenCode",
+			"CenterPinValue",
+			"UpPinValue",
+			"DownPinValue",
+			"MotorPin2",
+			"MotorPin1",
+			"\\n",
+			"n/",
+			"\\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 3779,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3729,
+								3729
+							]
+						],
+						"settings":
+						{
+							"auto_name": "arm-none-eabi-gcc -g -O2 -mlittle-endian -mthumb -",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1067.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/ivanvoid/Documents/STM32/STM32Fxx_TEMPLATE/Project 1/StdPerph/inc/stm32f4xx_rcc.h",
+					"settings":
+					{
+						"buffer_size": 38934,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1401,
+								1401
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 12145.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Makefile",
+					"settings":
+					{
+						"buffer_size": 1525,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"settings":
+					{
+						"buffer_size": 1296,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1167,
+								1000
+							]
+						],
+						"settings":
+						{
+							"auto_name": "arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mlittle",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "main.c",
+					"settings":
+					{
+						"buffer_size": 192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								192,
+								192
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.JLZ_pro_mini_06_08_14 2":
+	{
+		"height": 100.0
+	},
+	"output.MIDIsynth_ADSL_test":
+	{
+		"height": 100.0
+	},
+	"output.MIDIsynth_ToTEST":
+	{
+		"height": 162.0
+	},
+	"output.MIDIsynth_main_test":
+	{
+		"height": 100.0
+	},
+	"output.automatic-jalousie":
+	{
+		"height": 100.0
+	},
+	"output.clang":
+	{
+		"height": 100.0
+	},
+	"output.exec":
+	{
+		"height": 298.0
+	},
+	"output.gistb1627dd7e34a8c96d7d3-63d6078557816a8e036438a6dbad772648733ba1":
+	{
+		"height": 100.0
+	},
+	"output.midiSynth_debug":
+	{
+		"height": 100.0
+	},
+	"output.stino_log":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/ivanvoid/Documents/py_private_parser/plot_metric.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 202.0,
+	"status_bar_visible": true
+}
